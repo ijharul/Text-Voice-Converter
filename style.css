@@ -125,3 +125,11 @@ button img{
     width: 100%;
   }
 }
+
+@media (max-width: 600px){
+  .hero{
+    justify-content: center;   /* keep center */
+    padding-top: 60px;        /* top space */
+  }
+}
+
