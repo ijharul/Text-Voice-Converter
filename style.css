@@ -14,21 +14,24 @@
   justify-content: center;
   flex-direction: column;
   color: white;
+  padding: 20px;
 }
 
 .hero h1{
   font-size: 45px;
   font-weight:500 ;
-  margin-top: -50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .hero h1 span{
   color: #ff2963;
 }
 
+/* textarea */
 textarea{
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 250px;
   background-color: #403d84;
   color: #fff;
@@ -46,22 +49,26 @@ textarea::placeholder{
   color: #ddd;
 }
 
+/* row */
 .row{
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
+/* button */
 button{
   background:#ff2963 ;
   color: #fff;
   font-size: 16px;
-  padding: 10px 30px;
+  padding: 12px 30px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 button img{
@@ -69,6 +76,7 @@ button img{
   margin-right: 10px;
 }
 
+/* select */
 select{
   flex: 1;
   color: #fff;
@@ -82,6 +90,48 @@ select{
   background-image: url(images/dropdown.png);
   background-repeat: no-repeat;
   background-size: 15px;
- background-position: right 20px center;
+  background-position: right 20px center;
+}
 
+
+   /* MOBILE RESPONSIVE */
+
+
+@media (max-width: 768px){
+  .hero h1{
+    font-size: 32px;
+  }
+
+  textarea{
+    height: 200px;
+  }
+
+  .row{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button{
+    width: 100%;
+    justify-content: center;
+  }
+
+  select{
+    width: 100%;
+  }
+}
+
+
+   /* SMALL MOBILE */
+
+
+@media (max-width: 480px){
+  .hero h1{
+    font-size: 26px;
+  }
+
+  textarea{
+    height: 180px;
+    font-size: 14px;
+  }
 }
